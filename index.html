@@ -1349,6 +1349,47 @@
       color: var(--navy);
     }
 
+    /* Phase Cards */
+    .phase-card {
+      background: var(--white);
+      border: 1px solid var(--grey-light);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .phase-header {
+      background: var(--navy-mid);
+      padding: 16px 20px;
+    }
+
+    .phase-label {
+      font-family: 'Barlow Condensed';
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .2em;
+      color: rgba(255, 255, 255, .4);
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .phase-title {
+      font-family: 'Bebas Neue';
+      font-size: 21px;
+      color: var(--gold-light);
+      letter-spacing: .03em;
+    }
+
+    .phase-body {
+      padding: 16px 20px;
+      font-size: 13px;
+      color: #5a6a7a;
+      line-height: 1.6;
+    }
+
+    .phase-span-2 {
+      grid-column: span 2;
+    }
+
     @media (max-width: 700px) {
       .hero {
         padding: 40px 24px;
@@ -1474,6 +1515,23 @@
       .res-grid-2,
       .res-grid-3 {
         grid-template-columns: 1fr !important;
+      }
+
+      .phase-header {
+        padding: 12px 14px;
+      }
+
+      .phase-title {
+        font-size: 18px;
+      }
+
+      .phase-body {
+        padding: 12px 14px;
+        font-size: 12px;
+      }
+
+      .phase-span-2 {
+        grid-column: 1 / -1 !important;
       }
 
       .table-responsive {
@@ -3041,61 +3099,45 @@
 
       <div class="res-grid-2" style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0">
 
-        <div
-          style="background:var(--white);border:1px solid var(--grey-light);border-radius:10px;overflow:hidden;opacity:.85">
-          <div style="background:var(--navy-mid);padding:16px 20px">
-            <div
-              style="font-family:'Barlow Condensed';font-size:11px;font-weight:700;letter-spacing:.2em;color:rgba(255,255,255,.4);text-transform:uppercase;margin-bottom:4px">
-              Geplant · Phase 2</div>
-            <div style="font-family:'Bebas Neue';font-size:21px;color:var(--gold-light);letter-spacing:.03em">
-              Reichweiten-Ausbau</div>
+        <div class="phase-card" style="opacity:.85">
+          <div class="phase-header">
+            <div class="phase-label">Geplant · Phase 2</div>
+            <div class="phase-title">Reichweiten-Ausbau</div>
           </div>
-          <div style="padding:16px 20px;font-size:13px;color:#5a6a7a;line-height:1.6">
+          <div class="phase-body">
             Ausbau auf YouTube und/oder Twitch mit regelmäßigen Livestreams direkt aus der Werkstatt. Längere Formate,
             tiefere Inhalte, neue Zielgruppen — auf Basis der bereits etablierten Personal Brand.
           </div>
         </div>
 
-        <div
-          style="background:var(--white);border:1px solid var(--grey-light);border-radius:10px;overflow:hidden;opacity:.85">
-          <div style="background:var(--navy-mid);padding:16px 20px">
-            <div
-              style="font-family:'Barlow Condensed';font-size:11px;font-weight:700;letter-spacing:.2em;color:rgba(255,255,255,.4);text-transform:uppercase;margin-bottom:4px">
-              Geplant · Phase 3</div>
-            <div style="font-family:'Bebas Neue';font-size:21px;color:var(--gold-light);letter-spacing:.03em">
-              Motorrad-Kurs</div>
+        <div class="phase-card" style="opacity:.85">
+          <div class="phase-header">
+            <div class="phase-label">Geplant · Phase 3</div>
+            <div class="phase-title">Motorrad-Kurs</div>
           </div>
-          <div style="padding:16px 20px;font-size:13px;color:#5a6a7a;line-height:1.6">
+          <div class="phase-body">
             Das All-In Gebäude bietet mit seinem Motorrad-Angebot eine natürliche Erweiterung. Ein zweiter Online-Kurs
             für Motorrad-Enthusiasten — mit derselben Infrastruktur, deutlich geringerem Aufwand beim Aufbau.
           </div>
         </div>
 
-        <div
-          style="background:var(--white);border:1px solid var(--grey-light);border-radius:10px;overflow:hidden;opacity:.75">
-          <div style="background:var(--navy-mid);padding:16px 20px">
-            <div
-              style="font-family:'Barlow Condensed';font-size:11px;font-weight:700;letter-spacing:.2em;color:rgba(255,255,255,.4);text-transform:uppercase;margin-bottom:4px">
-              Geplant · Phase 4</div>
-            <div style="font-family:'Bebas Neue';font-size:21px;color:var(--gold-light);letter-spacing:.03em">
-              Werkstatt-Buchungsportal</div>
+        <div class="phase-card" style="opacity:.75">
+          <div class="phase-header">
+            <div class="phase-label">Geplant · Phase 4</div>
+            <div class="phase-title">Werkstatt-Buchungsportal</div>
           </div>
-          <div style="padding:16px 20px;font-size:13px;color:#5a6a7a;line-height:1.6">
+          <div class="phase-body">
             Integration eines Online-Buchungssystems — Members können direkt Termine für Werkstattbesuche buchen.
             Nahtlose Verbindung zwischen der digitalen Community und dem physischen Betrieb in Wiesloch.
           </div>
         </div>
 
-        <div
-          style="background:var(--white);border:1px solid var(--grey-light);border-radius:10px;overflow:hidden;opacity:.65">
-          <div style="background:var(--navy-mid);padding:16px 20px">
-            <div
-              style="font-family:'Barlow Condensed';font-size:11px;font-weight:700;letter-spacing:.2em;color:rgba(255,255,255,.4);text-transform:uppercase;margin-bottom:4px">
-              Geplant · Phase 5</div>
-            <div style="font-family:'Bebas Neue';font-size:21px;color:var(--gold-light);letter-spacing:.03em">
-              Membership-Ausbau &amp; Werbekooperationen</div>
+        <div class="phase-card" style="opacity:.65">
+          <div class="phase-header">
+            <div class="phase-label">Geplant · Phase 5</div>
+            <div class="phase-title">Membership-Ausbau &amp; Werbekooperationen</div>
           </div>
-          <div style="padding:16px 20px;font-size:13px;color:#5a6a7a;line-height:1.6">
+          <div class="phase-body">
             Mit wachsender Community und Reichweite ergeben sich zwei parallele Wachstumspfade: Erstens der Ausbau der
             Membership um exklusive Stufen (z. B. Premium-Tier mit persönlichem Coaching, Werkstattbesuch oder
             Fahrzeugbewertung). Zweitens Werbekooperationen mit US-Car-affinen Marken — Teile-Händler, Importeure,
@@ -3104,16 +3146,12 @@
           </div>
         </div>
 
-        <div
-          style="background:var(--white);border:1px solid var(--grey-light);border-radius:10px;overflow:hidden;opacity:.65;grid-column:span 2">
-          <div style="background:var(--navy-mid);padding:16px 20px">
-            <div
-              style="font-family:'Barlow Condensed';font-size:11px;font-weight:700;letter-spacing:.2em;color:rgba(255,255,255,.4);text-transform:uppercase;margin-bottom:4px">
-              Geplant · Phase 6</div>
-            <div style="font-family:'Bebas Neue';font-size:21px;color:var(--gold-light);letter-spacing:.03em">Kurs:
-              Selbständig in der KFZ-Branche</div>
+        <div class="phase-card phase-span-2" style="opacity:.65">
+          <div class="phase-header">
+            <div class="phase-label">Geplant · Phase 6</div>
+            <div class="phase-title">Kurs: Selbständig in der KFZ-Branche</div>
           </div>
-          <div style="padding:16px 20px;font-size:13px;color:#5a6a7a;line-height:1.6">
+          <div class="phase-body">
             Ein völlig neues Kursformat richtet sich an angehende KFZ-Unternehmer: Wie macht man sich in der KFZ-Branche
             selbständig? Dirk teilt seinen eigenen Werdegang — von der Ausbildung über die Meisterpüfung bis zur eigenen
             Werkstatt — und gibt praxisnahe Einblicke in Businessaufbau, Kundenstamm, Standortwahl und den Alltag als
