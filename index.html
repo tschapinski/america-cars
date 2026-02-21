@@ -638,22 +638,26 @@
 
     .module-header {
       display: flex;
-      align-items: center;
+      align-items: stretch;
       gap: 0;
     }
 
     .module-num {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       background: var(--navy);
       color: var(--white);
       font-family: 'Bebas Neue';
       font-size: 28px;
-      padding: 20px 24px;
+      padding: 0 24px;
       min-width: 80px;
-      text-align: center;
       line-height: 1;
     }
 
     .module-title-wrap {
+      display: flex;
+      align-items: center;
       flex: 1;
       padding: 18px 24px;
       background: var(--navy-mid);
@@ -668,12 +672,15 @@
     }
 
     .module-duration {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       background: var(--gold);
       color: var(--navy);
       font-family: 'Barlow Condensed';
       font-size: 15px;
       font-weight: 700;
-      padding: 18px 20px;
+      padding: 0 20px;
       white-space: nowrap;
     }
 
@@ -1430,14 +1437,10 @@
       }
 
       /* Module header mobile fix */
-      .module-header {
-        flex-wrap: wrap;
-      }
-
       .module-num {
         min-width: 60px;
         font-size: 22px;
-        padding: 14px 16px;
+        padding: 0 16px;
       }
 
       .module-title-wrap {
@@ -1453,8 +1456,9 @@
 
       .module-duration {
         width: auto;
-        padding: 10px 14px;
+        padding: 0 14px;
         font-size: 13px;
+        flex-shrink: 0;
       }
 
       .lesson-num {
@@ -3099,7 +3103,7 @@
 
       <div class="res-grid-2" style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0">
 
-        <div class="phase-card" style="opacity:.85">
+        <div class="phase-card">
           <div class="phase-header">
             <div class="phase-label">Geplant · Phase 2</div>
             <div class="phase-title">Reichweiten-Ausbau</div>
@@ -3110,7 +3114,7 @@
           </div>
         </div>
 
-        <div class="phase-card" style="opacity:.85">
+        <div class="phase-card">
           <div class="phase-header">
             <div class="phase-label">Geplant · Phase 3</div>
             <div class="phase-title">Motorrad-Kurs</div>
@@ -3121,7 +3125,7 @@
           </div>
         </div>
 
-        <div class="phase-card" style="opacity:.75">
+        <div class="phase-card">
           <div class="phase-header">
             <div class="phase-label">Geplant · Phase 4</div>
             <div class="phase-title">Werkstatt-Buchungsportal</div>
@@ -3132,7 +3136,7 @@
           </div>
         </div>
 
-        <div class="phase-card" style="opacity:.65">
+        <div class="phase-card">
           <div class="phase-header">
             <div class="phase-label">Geplant · Phase 5</div>
             <div class="phase-title">Membership-Ausbau &amp; Werbekooperationen</div>
@@ -3146,7 +3150,7 @@
           </div>
         </div>
 
-        <div class="phase-card phase-span-2" style="opacity:.65">
+        <div class="phase-card phase-span-2">
           <div class="phase-header">
             <div class="phase-label">Geplant · Phase 6</div>
             <div class="phase-title">Kurs: Selbständig in der KFZ-Branche</div>
